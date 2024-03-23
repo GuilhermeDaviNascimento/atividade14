@@ -1,13 +1,13 @@
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const express = require("express");
 const app = express();
 // Configuração da conexão com o banco de dados
 const connection = mysql.createConnection({
-    host: 'localhost', // Endereço do servidor MySQL
-    port: 3306, // Porta do servidor MySQL
+    host: 'roundhouse.proxy.rlwy.net', // Endereço do servidor MySQL
+    port: 14015, // Porta do servidor MySQL
     user: 'root', // Nome de usuário do MySQL
-    password: '', // Senha do usuário do MySQL
-    database: 'crudteste' // Nome do banco de dados que deseja se conectar
+    password: 'dfbnhGXrIghazlBtytpEybPvOrfuxagP', // Senha do usuário do MySQL
+    database: 'railway' // Nome do banco de dados que deseja se conectar
   });
 // Conexão com o banco de dados
 connection.connect((err) => {
